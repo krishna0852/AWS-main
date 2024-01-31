@@ -3,6 +3,21 @@ variable "vpc_cidr_range" {
       description="vpc-cidr-block"
  }
 
+ variable "nat-pblc-instance" {
+       type=map(object({
+       availability_zone=string 
+       cidr_block=string
+       name=string
+
+  }))
+
+ }
+
+ variable "elastic-ip-name" {
+     type=string
+     description = "give elastic-ip-names"   
+ }
+
  variable "pblcsbnt-config" {
   type=map(object({
     availability_zone=string 
