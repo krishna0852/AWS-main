@@ -1,0 +1,13 @@
+#ignoring terraform-statefile 
+
+.terraform/*
+terraform.tfstate 
+.terraform
+#ignoring all terraform hidden files
+.terraform*
+.terraform.*
+terraform*
+
+#ignoring provider file 
+
+provider.tf
